@@ -4,6 +4,9 @@ const { Employee } = require("../Models/Employee.model")
 
 const employeeRouter = express.Router();
 
+
+
+
 employeeRouter.get("/employees", async(req,res) =>{
     const user = await Employee.find()
     res.send(user)
